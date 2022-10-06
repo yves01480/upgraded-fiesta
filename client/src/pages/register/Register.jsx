@@ -9,7 +9,7 @@ export default function Register() {
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
   const history = useHistory();
-  axios = axios.create({ baseURL: process.env.API_URL });
+  const axios = axios.create({ baseURL: process.env.API_URL });
 
   const emailRef = useRef();
   const passwordRef = useRef();

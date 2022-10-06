@@ -1,7 +1,7 @@
 import axios from "axios";
 import { loginFailure, loginStart, loginSuccess } from "./AuthActions";
 
-axios = axios.create({ baseURL: process.env.API_URL });
+const axios = axios.create({ baseURL: process.env.API_URL });
 
 export const login = async (user, dispatch) => {
   dispatch(loginStart());

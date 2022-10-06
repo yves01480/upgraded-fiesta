@@ -9,7 +9,7 @@ import axios from "axios";
 import { eventNames } from "../../../../api/models/User";
 
 export default function Home() {
-  axios = axios.create({ baseURL: process.env.API_URL });
+  const axios = axios.create({ baseURL: process.env.API_URL });
   const MONTHS = useMemo(
     () => [
       "Jan",

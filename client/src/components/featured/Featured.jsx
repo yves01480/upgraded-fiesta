@@ -5,7 +5,7 @@ import "./featured.scss";
 
 export default function Featured({ type, setGenre }) {
   const [content, setContent] = useState({});
-  axios = axios.create({ baseURL: process.env.API_URL });
+  const axios = axios.create({ baseURL: process.env.API_URL });
 
   useEffect(() => {
     const getRandomContent = async () => {
